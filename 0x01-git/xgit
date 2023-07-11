@@ -1,5 +1,5 @@
 #!/bin/bash
-cd "/path/to/your/directory"
+cd "$(dirname "$0")"
 last_commit_timestamp=$(git log -1 --format=%ct)
 for file in *; do
 	    if [ -f "$file" ]; then
